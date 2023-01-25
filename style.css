@@ -1,0 +1,108 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-size: 13px;
+}
+
+body {
+    /* background-color: var(--Very-Dark-Blue); */
+    width: 375px;
+
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 325px;
+    height: 330px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.star {
+    width: 13px;
+}
+
+.star-border {
+    background-color: var(--Dark-Blue);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+p {
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rate button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--Dark-Blue);
+    border: 0;
+
+}
+
+.rate button :hover {
+    background-color: var(--Medium-Grey);
+}
+
+button {
+    color: var(--White);
+
+}
+
+.rate {
+    /* border: 1px solid black; */
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.submit {
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: var(--Orange);
+}
+
+.attribution {
+    margin: 10px;
+}
