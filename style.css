@@ -79,12 +79,18 @@ p {
 
 }
 
-.rate button :hover {
-    background-color: var(--Medium-Grey);
+.rate button:hover {
+    background-color: var(--Orange);
+}
+
+.submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
 }
 
 button {
     color: var(--White);
+    cursor: pointer;
 
 }
 
