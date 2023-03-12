@@ -121,3 +121,9 @@ p {
     border-radius: 50px;
     padding: 8px;
 }
+
+.attribution,a{
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--White);
+}
