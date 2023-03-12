@@ -7,10 +7,6 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -25,56 +21,65 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Rating state start -->
-
-  <div class="container" id="rating">
-    <div class="star-border">
-      <img class="star" src="./images/icon-star.svg" alt="" srcset="">
+  <div class="container" id="container">
+    <div class="star-container">
+      <img class="star" src="./images/icon-star.svg" alt="">
     </div>
-    <h1>How did we do?</h1>
-    
+    <h1>
+      How did we do?
+    </h1>
+
     <p>
       Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!
     </p>
-    <div class="selection">
-      <span class="rate">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-      </span>
-      <br>
-      <button class="submit" type="submit">SUBMIT</button>
-    </div>
-  </div>
 
+    <span id="btn-rating">
+      <button class="btn" id="rating-1" value="">1</button>
+      <button class="btn" id="rating-2" value="">2</button>
+      <button class="btn" id="rating-3" value="">3</button>
+      <button class="btn" id="rating-4" value="">4</button>
+      <button class="btn" id="rating-5" value="">5</button>
+    </span>
+
+    <button type="submit" id="submit">SUBMIT</button>
+  </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
+  <!-- <div class="container" id="container">
+    <div id="thank-you">
+      <img id="thank-you-image" src="./images/illustration-thank-you.svg" alt="">
+      <h1 id="thank-you-h1">
+        You selected ${rating} out of 5
+      </h1>
 
-  <!-- <div class="container" id="thank-you">
-    <h1>You selected Add rating here out of 5</h1>
+      <h2 id="thank-you-h2">
+        Thank you!
+      </h2>
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
+      <p id="thank-you-p">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
   </div> -->
-
-  <!-- Thank you state end -->
+  <!-- Thank you state end
 
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    <br>
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
-<script src="script.js"></script>
+<script src="app.js"></script>
 </html>
